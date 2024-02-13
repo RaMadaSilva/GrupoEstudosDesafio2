@@ -83,7 +83,7 @@
     {
         if (!string.IsNullOrEmpty(ModelFiltro.Filtro.Trim()))
         {
-            ListConsulta = ListHistResult
+            ListHistResult = ListHistResult
                 .Where(item => item.Contains(ModelFiltro.Filtro, StringComparison.OrdinalIgnoreCase))
                 .ToList();
         }
